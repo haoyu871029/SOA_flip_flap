@@ -11,6 +11,6 @@ yml_filename = ARGV[1]
 
 tsv = File.read(tsv_filename)
 flipper = FlipFlap.new
-flipper.take_tsv(tsv)
+flipper.take_tsv(tsv) # tsv -> @data
 
 File.write(yml_filename, flipper.to_yaml)
